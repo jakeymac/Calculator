@@ -97,7 +97,7 @@ class Window:
         self.bottom_entry.delete(0,tk.END)
         self.bottom_entry.insert(0,self.entries_handler.get_bottom_entry())
         self.top_entry.delete(0,tk.END)
-        self.top_entry.insert(0,self.entries_handler.get_top_entry() + self.entries_handler.get_operator())
+        self.top_entry.insert(0,self.entries_handler.get_top_entry() + " " + self.entries_handler.get_operator())
 
         self.clear_button.config(text=self.entries_handler.get_current_clear_button())
 

@@ -138,6 +138,8 @@ class Entries:
         return self.bottom_entry
 
     def get_operator(self):
+        if self.current_operator == "X": 
+            return "x"
         return self.current_operator
 
     def get_current_clear_button(self):
